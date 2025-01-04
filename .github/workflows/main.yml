@@ -1,6 +1,9 @@
 name: Update Proxy List
 
 on:
+  push:
+    branches:
+      - main  # 当 main 分支有更改时触发
   schedule:
     - cron: '0 0 * * 0'  # 每周日的 00:00 UTC 运行
   workflow_dispatch:  # 允许手动触发工作流
@@ -13,26 +16,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Download proxy lists
+      - name: Download proxy URLs
+        id: download_urls
         run: |
+          # 确保 urls 文件存在
+          if [ ! -f proxy/urls ]; then
+            echo "proxy/urls file not found!"
+            exit 1
+          fi
+
           # 创建一个临时文件
           temp_file=$(mktemp)
-          
-          # 下载各个列表并追加到临时文件
-          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list >> $temp_file
-          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list >> $temp_file
-          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list >> $temp_file
-          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list >> $temp_file
+
+          # 读取 urls 文件并下载内容
+          while IFS= read -r url; do
+            echo "Downloading from $url"
+            curl -s "$url" >> $temp_file
+          done < proxy/urls
+
+          # 确保 proxy 目录存在
+          mkdir -p proxy
 
           # 将临时文件内容写入 proxy.list
           mv $temp_file proxy/proxy.list
-
-      - name: List files in the repository
-        run: |
-          echo "Current directory:"
-          pwd  # 显示当前工作目录
-          echo "Files in the repository:"
-          ls -la  # 列出当前目录下的所有文件
           
       - name: Commit and push changes
         run: |
