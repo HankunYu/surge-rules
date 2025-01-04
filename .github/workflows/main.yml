@@ -24,6 +24,9 @@ jobs:
           curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list >> $temp_file
           curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list >> $temp_file
 
+          # 确保 proxy 目录存在
+          mkdir -p proxy
+
           # 将临时文件内容写入 proxy.list
           mv $temp_file proxy/proxy.list
 
@@ -31,8 +34,8 @@ jobs:
         run: |
           git config --local user.email "kmcyd1@gmail.com"
           git config --local user.name "hankun"
-          git add proxy.list
-          git commit -m "Update proxy.list with new rules"
+          git add proxy/proxy.list
+          git commit -m "Update proxy.list with new rules" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
