@@ -1,0 +1,38 @@
+name: Update Proxy List
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # 每周日的 00:00 UTC 运行
+  workflow_dispatch:  # 允许手动触发工作流
+
+jobs:
+  update-proxy-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Download proxy lists
+        run: |
+          # 创建一个临时文件
+          temp_file=$(mktemp)
+          
+          # 下载各个列表并追加到临时文件
+          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list >> $temp_file
+          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list >> $temp_file
+          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list >> $temp_file
+          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list >> $temp_file
+
+          # 将临时文件内容写入 proxy.list
+          mv $temp_file proxy/proxy.list
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "kmcyd1@gmail.com"
+          git config --local user.name "hankun"
+          git add proxy.list
+          git commit -m "Update proxy.list with new rules"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
