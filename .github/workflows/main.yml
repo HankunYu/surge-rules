@@ -30,8 +30,19 @@ jobs:
 
           # 读取 urls 文件并下载内容
           while IFS= read -r url; do
+            # 检查 URL 是否为空
+            if [ -z "$url" ]; then
+              echo "Empty URL found, skipping..."
+              continue
+            fi
+            
             echo "Downloading from $url"
-            curl -s "$url" >> $temp_file
+            # 使用 curl 下载内容，并检查返回状态
+            if curl -s --fail "$url" >> $temp_file; then
+              echo "Successfully downloaded $url"
+            else
+              echo "Failed to download $url"
+            fi
           done < proxy/urls
 
           # 确保 proxy 目录存在
