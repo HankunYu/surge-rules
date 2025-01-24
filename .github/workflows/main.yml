@@ -103,22 +103,45 @@ jobs:
             fi
             
             echo "Attempting to download from: $url"
-            # 使用 curl 下载内容，移除 -v 参数
-            if curl -s --fail "$url" >> $temp_file; then
-              echo "Successfully downloaded from $url"
-              echo "Current size of temp file: $(wc -c < $temp_file) bytes"
+            # 创建临时文件用于单个下载
+            single_download=$(mktemp)
+            
+            # 使用 curl 下载内容并检查
+            if curl -L -s --fail "$url" > "$single_download"; then
+              # 检查下载的文件大小
+              file_size=$(wc -c < "$single_download")
+              if [ "$file_size" -gt 0 ]; then
+                echo "Successfully downloaded from $url (size: $file_size bytes)"
+                cat "$single_download" >> "$temp_file"
+              else
+                echo "Warning: Downloaded file is empty from $url"
+              fi
             else
               echo "Failed to download from $url, curl exit code: $?"
             fi
+            
+            # 清理单个下载的临时文件
+            rm -f "$single_download"
+            
+            # 显示当前累计大小
+            echo "Current accumulated size: $(wc -c < "$temp_file") bytes"
           done < proxy_reverse/urls
 
           # 确保 proxy_reverse 目录存在
           mkdir -p proxy_reverse
           echo "Created/verified proxy_reverse directory"
 
+          # 检查最终文件大小
+          if [ ! -s "$temp_file" ]; then
+            echo "Error: Downloaded content is empty!"
+            exit 1
+          fi
+
           # 将临时文件内容写入 proxy_reverse.list
-          mv $temp_file proxy_reverse/proxy_reverse.list
+          mv "$temp_file" proxy_reverse/proxy_reverse.list
           echo "Final proxy_reverse.list size: $(wc -c < proxy_reverse/proxy_reverse.list) bytes"
+          echo "Content preview of proxy_reverse.list:"
+          head -n 5 proxy_reverse/proxy_reverse.list
 
       - name: Set outputs
         id: vars
