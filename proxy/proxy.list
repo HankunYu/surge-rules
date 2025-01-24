@@ -1,5 +1,5 @@
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8003::154, 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8002::154
+* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
 * IPv4: 185.199.109.133, 185.199.110.133, 185.199.111.133, 185.199.108.133
 *   Trying 185.199.109.133:443...
 * Connected to raw.githubusercontent.com (185.199.109.133) port 443
@@ -63,19 +63,19 @@
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: 9B4C:2B66D0:668005:7220E7:6793BC9E
+< x-github-request-id: 65B5:E323F:88111:93706:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:15 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000059-CHI
+< x-served-by: cache-iad-kcgs7200099-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735327.108197,VS0,VE59
+< x-timer: S1737735616.706471,VS0,VE48
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 918e13bda4edff768cef3ffe79ec7740aadd40af
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: 741414c5024f35defe41737e957036e9604a821b
+< expires: Fri, 24 Jan 2025 16:25:15 GMT
 < source-age: 0
 < content-length: 1085
 < 
@@ -119,10 +119,10 @@ DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-KEYWORD,github
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8000::154
-* IPv4: 185.199.109.133, 185.199.108.133, 185.199.110.133, 185.199.111.133
-*   Trying 185.199.109.133:443...
-* Connected to raw.githubusercontent.com (185.199.109.133) port 443
+* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
+* IPv4: 185.199.110.133, 185.199.109.133, 185.199.108.133, 185.199.111.133
+*   Trying 185.199.110.133:443...
+* Connected to raw.githubusercontent.com (185.199.110.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -183,23 +183,23 @@ DOMAIN-KEYWORD,github
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: FA4C:22CAE5:61A837:6D4966:6793BC9E
+< x-github-request-id: 9C6B:272DCC:7BAD9:86D4B:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:15 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000071-CHI
+< x-served-by: cache-iad-kcgs7200065-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735327.207196,VS0,VE86
+< x-timer: S1737735616.792201,VS0,VE49
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: fac2a1f515175ec0c2fe85a5eebc8980e9ed9ac0
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: aa491a9d1eafbd7b5b2fff9ca199b9272699edf0
+< expires: Fri, 24 Jan 2025 16:25:15 GMT
 < source-age: 0
 < content-length: 20814
 < 
-{ [2747 bytes data]
+{ [15456 bytes data]
 # NAME: Google
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -941,10 +941,10 @@ PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
 PROCESS-NAME,BackupandSync
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8002::154, 2606:50c0:8000::154, 2606:50c0:8003::154
-* IPv4: 185.199.108.133, 185.199.111.133, 185.199.109.133, 185.199.110.133
-*   Trying 185.199.108.133:443...
-* Connected to raw.githubusercontent.com (185.199.108.133) port 443
+* IPv6: 2606:50c0:8001::154, 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8000::154
+* IPv4: 185.199.109.133, 185.199.110.133, 185.199.111.133, 185.199.108.133
+*   Trying 185.199.109.133:443...
+* Connected to raw.githubusercontent.com (185.199.109.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -1005,19 +1005,19 @@ PROCESS-NAME,BackupandSync
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: E789:177DA8:5C0A1:65FC8:6793BC9F
+< x-github-request-id: 6AD8:D3FDC:70676:7A749:6793BC44
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:15 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000044-CHI
-< x-cache: MISS
+< x-served-by: cache-iad-kcgs7200175-IAD
+< x-cache: HIT
 < x-cache-hits: 0
-< x-timer: S1737735327.331351,VS0,VE70
+< x-timer: S1737735616.877312,VS0,VE5
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 34b9172fdc980a5b5ac6da5ffa8f60e704a04f4e
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: 864027cc85e16e4f099a171ef4dc9217c75e6739
+< expires: Fri, 24 Jan 2025 16:25:15 GMT
 < source-age: 0
 < content-length: 5451
 < 
@@ -1224,10 +1224,10 @@ USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtube*
 USER-AGENT,com.google.ios.youtubemusic*
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8002::154, 2606:50c0:8000::154, 2606:50c0:8003::154
-* IPv4: 185.199.110.133, 185.199.111.133, 185.199.108.133, 185.199.109.133
-*   Trying 185.199.110.133:443...
-* Connected to raw.githubusercontent.com (185.199.110.133) port 443
+* IPv6: 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154
+* IPv4: 185.199.111.133, 185.199.110.133, 185.199.108.133, 185.199.109.133
+*   Trying 185.199.111.133:443...
+* Connected to raw.githubusercontent.com (185.199.111.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -1288,23 +1288,23 @@ USER-AGENT,com.google.ios.youtubemusic*
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: 5FB0:133641:6D0BF:77171:6793BC9F
+< x-github-request-id: A3AF:1487F9:78571:837D0:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:15 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000108-CHI
+< x-served-by: cache-iad-kcgs7200056-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735327.439443,VS0,VE85
+< x-timer: S1737735616.919316,VS0,VE5
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: e6d9301c4b2988bbccfde18369262c61c19652b6
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: 7c8117423173d52e98433095b4a9403952442e5c
+< expires: Fri, 24 Jan 2025 16:25:15 GMT
 < source-age: 0
 < content-length: 17399
 < 
-{ [15456 bytes data]
+{ [5 bytes data]
 # NAME: Facebook
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -1886,10 +1886,10 @@ IP-CIDR,54.235.23.242/32,no-resolve
 IP-CIDR,54.93.124.31/32,no-resolve
 IP-ASN,32934,no-resolve
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8003::154, 2606:50c0:8002::154
-* IPv4: 185.199.110.133, 185.199.109.133, 185.199.111.133, 185.199.108.133
-*   Trying 185.199.110.133:443...
-* Connected to raw.githubusercontent.com (185.199.110.133) port 443
+* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
+* IPv4: 185.199.108.133, 185.199.110.133, 185.199.111.133, 185.199.109.133
+*   Trying 185.199.108.133:443...
+* Connected to raw.githubusercontent.com (185.199.108.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -1950,19 +1950,19 @@ IP-ASN,32934,no-resolve
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: 58BC:D9A41:5F5065:6AF14A:6793BC9D
+< x-github-request-id: B83D:362057:51BEB:5C94D:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:16 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000047-CHI
+< x-served-by: cache-iad-kcgs7200148-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735328.573999,VS0,VE26
+< x-timer: S1737735616.960621,VS0,VE45
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 8b674f56c3e857b989c1b379524e0217af336fe3
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: 462c7a864b108a0088ff921513a15e5e30c16936
+< expires: Fri, 24 Jan 2025 16:25:16 GMT
 < source-age: 0
 < content-length: 1607
 < 
@@ -2026,10 +2026,10 @@ PROCESS-NAME,tw.nekomimi.nekogram
 PROCESS-NAME,xyz.nextalone.nagram
 OR,((IP-ASN,44907,no-resolve),(IP-ASN,59930,no-resolve),(IP-ASN,62014,no-resolve),(IP-ASN,62041,no-resolve),(IP-ASN,211157,no-resolve))
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
-* IPv4: 185.199.108.133, 185.199.110.133, 185.199.111.133, 185.199.109.133
-*   Trying 185.199.108.133:443...
-* Connected to raw.githubusercontent.com (185.199.108.133) port 443
+* IPv6: 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8001::154
+* IPv4: 185.199.109.133, 185.199.111.133, 185.199.110.133, 185.199.108.133
+*   Trying 185.199.109.133:443...
+* Connected to raw.githubusercontent.com (185.199.109.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -2090,19 +2090,19 @@ OR,((IP-ASN,44907,no-resolve),(IP-ASN,59930,no-resolve),(IP-ASN,62014,no-resolve
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: 24EE:2B8EBA:69D01:73E28:6793BC9D
+< x-github-request-id: 4C2E:2A3479:16DA20:192FFA:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:16 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000100-CHI
+< x-served-by: cache-iad-kcgs7200093-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735328.636087,VS0,VE64
+< x-timer: S1737735616.041254,VS0,VE62
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 6ab8878ae5c0d66d5555adafe2026c7c7351cbf1
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: b24f63022c5fa993ed4d539b9e61f656ebaa81f7
+< expires: Fri, 24 Jan 2025 16:25:16 GMT
 < source-age: 0
 < content-length: 426
 < 
@@ -2123,8 +2123,8 @@ DOMAIN-SUFFIX,reddituploads.com
 DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
 DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8003::154
-* IPv4: 185.199.110.133, 185.199.111.133, 185.199.109.133, 185.199.108.133
+* IPv6: 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8003::154
+* IPv4: 185.199.110.133, 185.199.109.133, 185.199.108.133, 185.199.111.133
 *   Trying 185.199.110.133:443...
 * Connected to raw.githubusercontent.com (185.199.110.133) port 443
 * ALPN: curl offers h2,http/1.1
@@ -2187,19 +2187,19 @@ DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: 5FB0:133641:6D0F2:7719B:6793BC9F
+< x-github-request-id: 9F1C:375D45:6593E:708EE:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:16 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000086-CHI
+< x-served-by: cache-iad-kcgs7200083-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735328.736622,VS0,VE69
+< x-timer: S1737735616.146827,VS0,VE52
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 34652bfdc3e16cdd9525c535f59b0f8f0723193d
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: e202c8f8eba028e95e6b3b81493c5f159752d48c
+< expires: Fri, 24 Jan 2025 16:25:16 GMT
 < source-age: 0
 < content-length: 468
 < 
@@ -2223,10 +2223,10 @@ DOMAIN-SUFFIX,slackcertified.com
 DOMAIN-SUFFIX,slackdemo.com
 DOMAIN-SUFFIX,slackhq.com
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8002::154, 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8001::154
-* IPv4: 185.199.111.133, 185.199.110.133, 185.199.108.133, 185.199.109.133
-*   Trying 185.199.111.133:443...
-* Connected to raw.githubusercontent.com (185.199.111.133) port 443
+* IPv6: 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154
+* IPv4: 185.199.109.133, 185.199.111.133, 185.199.108.133, 185.199.110.133
+*   Trying 185.199.109.133:443...
+* Connected to raw.githubusercontent.com (185.199.109.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -2287,19 +2287,19 @@ DOMAIN-SUFFIX,slackhq.com
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: C1D1:E17E1:5BD953:677A44:6793BC9E
+< x-github-request-id: F9AC:2DA626:15F686:184C7B:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:27 GMT
+< date: Fri, 24 Jan 2025 16:20:16 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000033-CHI
+< x-served-by: cache-iad-kcgs7200070-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735328.841723,VS0,VE81
+< x-timer: S1737735616.235452,VS0,VE214
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 1e894ef8074362b09a7b4bc56f8799f2e3fdb570
-< expires: Fri, 24 Jan 2025 16:20:27 GMT
+< x-fastly-request-id: a9711e2501c4f81dccd2bef9cbbd37cb6e1ace18
+< expires: Fri, 24 Jan 2025 16:25:16 GMT
 < source-age: 0
 < content-length: 4392
 < 
@@ -2448,10 +2448,10 @@ USER-AGENT,battleroyale*
 USER-AGENT,com.apple.trustd*
 USER-AGENT,hearthstone*
 * Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8003::154, 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8002::154
-* IPv4: 185.199.110.133, 185.199.109.133, 185.199.108.133, 185.199.111.133
-*   Trying 185.199.110.133:443...
-* Connected to raw.githubusercontent.com (185.199.110.133) port 443
+* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
+* IPv4: 185.199.109.133, 185.199.110.133, 185.199.111.133, 185.199.108.133
+*   Trying 185.199.109.133:443...
+* Connected to raw.githubusercontent.com (185.199.109.133) port 443
 * ALPN: curl offers h2,http/1.1
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
@@ -2512,19 +2512,19 @@ USER-AGENT,hearthstone*
 < x-content-type-options: nosniff
 < x-frame-options: deny
 < x-xss-protection: 1; mode=block
-< x-github-request-id: 30D6:15A2F0:61C9C:6BCFB:6793BC9B
+< x-github-request-id: 4990:24D7E4:278857:2B8FB2:6793BDBF
 < accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:15:28 GMT
+< date: Fri, 24 Jan 2025 16:20:16 GMT
 < via: 1.1 varnish
-< x-served-by: cache-chi-kigq8000058-CHI
+< x-served-by: cache-iad-kcgs7200101-IAD
 < x-cache: MISS
 < x-cache-hits: 0
-< x-timer: S1737735328.962391,VS0,VE71
+< x-timer: S1737735616.486567,VS0,VE267
 < vary: Authorization,Accept-Encoding,Origin
 < access-control-allow-origin: *
 < cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: e461f23f6d20c7c06ac389e63c1579868f37f204
-< expires: Fri, 24 Jan 2025 16:20:28 GMT
+< x-fastly-request-id: 2bf56ce794b5b9f78d5a09cd0c862b880e1575a9
+< expires: Fri, 24 Jan 2025 16:25:16 GMT
 < source-age: 0
 < content-length: 385
 < 
