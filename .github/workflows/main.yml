@@ -19,72 +19,106 @@ jobs:
       - name: Download proxy URLs
         id: download_urls
         run: |
-          # 确保 urls 文件存在
+          # 检查目录结构
+          echo "Current directory: $(pwd)"
+          echo "Directory listing:"
+          ls -la
+          
+          # 确保 urls 文件存在并显示内容
           if [ ! -f proxy/urls ]; then
             echo "proxy/urls file not found!"
+            echo "Checking if directory exists:"
+            ls -la proxy/ || echo "proxy directory does not exist"
             exit 1
           fi
+          
+          echo "Content of proxy/urls:"
+          cat proxy/urls || echo "Cannot read file"
 
           # 创建一个临时文件
           temp_file=$(mktemp)
+          echo "Created temp file: $temp_file"
+
+          # 确保文件以换行符结束
+          sed -i -e '$a\' proxy/urls
 
           # 读取 urls 文件并下载内容
-          while IFS= read -r url; do
+          while IFS= read -r url || [ -n "$url" ]; do
             # 检查 URL 是否为空
             if [ -z "$url" ]; then
               echo "Empty URL found, skipping..."
               continue
             fi
             
-            echo "Downloading from $url"
-            # 使用 curl 下载内容，并检查返回状态
-            if curl -s --fail "$url" >> $temp_file; then
-              echo "Successfully downloaded $url"
+            echo "Attempting to download from: $url"
+            # 使用 curl 下载内容，添加更多的调试信息
+            if curl -v -s --fail "$url" >> $temp_file 2>&1; then
+              echo "Successfully downloaded from $url"
+              echo "Current size of temp file: $(wc -c < $temp_file) bytes"
             else
-              echo "Failed to download $url"
+              echo "Failed to download from $url, curl exit code: $?"
             fi
           done < proxy/urls
 
           # 确保 proxy 目录存在
           mkdir -p proxy
+          echo "Created/verified proxy directory"
 
           # 将临时文件内容写入 proxy.list
           mv $temp_file proxy/proxy.list
-          
+          echo "Final proxy.list size: $(wc -c < proxy/proxy.list) bytes"
+
       - name: Download proxy_reverse URLs
         id: download_reverse_urls
         run: |
-          # 确保 urls 文件存在
+          # 检查目录结构
+          echo "Current directory: $(pwd)"
+          echo "Directory listing:"
+          ls -la
+          
+          # 确保 urls 文件存在并显示内容
           if [ ! -f proxy_reverse/urls ]; then
             echo "proxy_reverse/urls file not found!"
+            echo "Checking if directory exists:"
+            ls -la proxy_reverse/ || echo "proxy_reverse directory does not exist"
             exit 1
           fi
+          
+          echo "Content of proxy_reverse/urls:"
+          cat proxy_reverse/urls || echo "Cannot read file"
 
           # 创建一个临时文件
           temp_file=$(mktemp)
+          echo "Created temp file: $temp_file"
+
+          # 确保文件以换行符结束
+          sed -i -e '$a\' proxy_reverse/urls
 
           # 读取 urls 文件并下载内容
-          while IFS= read -r url; do
+          while IFS= read -r url || [ -n "$url" ]; do
             # 检查 URL 是否为空
             if [ -z "$url" ]; then
               echo "Empty URL found, skipping..."
               continue
             fi
             
-            echo "Downloading from $url"
-            # 使用 curl 下载内容，并检查返回状态
-            if curl -s --fail "$url" >> $temp_file; then
-              echo "Successfully downloaded $url"
+            echo "Attempting to download from: $url"
+            # 使用 curl 下载内容，添加更多的调试信息
+            if curl -v -s --fail "$url" >> $temp_file 2>&1; then
+              echo "Successfully downloaded from $url"
+              echo "Current size of temp file: $(wc -c < $temp_file) bytes"
             else
-              echo "Failed to download $url"
+              echo "Failed to download from $url, curl exit code: $?"
             fi
           done < proxy_reverse/urls
 
           # 确保 proxy_reverse 目录存在
           mkdir -p proxy_reverse
+          echo "Created/verified proxy_reverse directory"
 
           # 将临时文件内容写入 proxy_reverse.list
           mv $temp_file proxy_reverse/proxy_reverse.list
+          echo "Final proxy_reverse.list size: $(wc -c < proxy_reverse/proxy_reverse.list) bytes"
 
       - name: Set outputs
         id: vars
