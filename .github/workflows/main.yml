@@ -50,6 +50,41 @@ jobs:
 
           # 将临时文件内容写入 proxy.list
           mv $temp_file proxy/proxy.list
+          
+      - name: Download proxy_reverse URLs
+        id: download_reverse_urls
+        run: |
+          # 确保 urls 文件存在
+          if [ ! -f proxy_reverse/urls ]; then
+          echo "proxy_reverse/urls file not found!"
+          exit 1
+            fi
+
+            # 创建一个临时文件
+            temp_file=$(mktemp)
+
+            # 读取 urls 文件并下载内容
+            while IFS= read -r url; do
+          # 检查 URL 是否为空
+          if [ -z "$url" ]; then
+            echo "Empty URL found, skipping..."
+            continue
+          fi
+          
+          echo "Downloading from $url"
+          # 使用 curl 下载内容，并检查返回状态
+          if curl -s --fail "$url" >> $temp_file; then
+            echo "Successfully downloaded $url"
+          else
+            echo "Failed to download $url"
+          fi
+            done < proxy_reverse/urls
+
+            # 确保 proxy_reverse 目录存在
+            mkdir -p proxy_reverse
+
+            # 将临时文件内容写入 proxy_reverse.list
+            mv $temp_file proxy_reverse/proxy_reverse.list
 
       - name: Set outputs
         id: vars
