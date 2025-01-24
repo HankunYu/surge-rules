@@ -51,8 +51,8 @@ jobs:
             fi
             
             echo "Attempting to download from: $url"
-            # 使用 curl 下载内容，添加更多的调试信息
-            if curl -v -s --fail "$url" >> $temp_file 2>&1; then
+            # 使用 curl 下载内容，移除 -v 参数
+            if curl -s --fail "$url" >> $temp_file; then
               echo "Successfully downloaded from $url"
               echo "Current size of temp file: $(wc -c < $temp_file) bytes"
             else
@@ -103,8 +103,8 @@ jobs:
             fi
             
             echo "Attempting to download from: $url"
-            # 使用 curl 下载内容，添加更多的调试信息
-            if curl -v -s --fail "$url" >> $temp_file 2>&1; then
+            # 使用 curl 下载内容，移除 -v 参数
+            if curl -s --fail "$url" >> $temp_file; then
               echo "Successfully downloaded from $url"
               echo "Current size of temp file: $(wc -c < $temp_file) bytes"
             else
