@@ -1,86 +1,3 @@
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
-* IPv4: 185.199.109.133, 185.199.110.133, 185.199.111.133, 185.199.108.133
-*   Trying 185.199.109.133:443...
-* Connected to raw.githubusercontent.com (185.199.109.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "35d5eac80b62d1469f5fbd99e88e270e7d603d31791413dced3552a88f204e83"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: 65B5:E323F:88111:93706:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:15 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200099-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.706471,VS0,VE48
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 741414c5024f35defe41737e957036e9604a821b
-< expires: Fri, 24 Jan 2025 16:25:15 GMT
-< source-age: 0
-< content-length: 1085
-< 
-{ [1085 bytes data]
-* Connection #0 to host raw.githubusercontent.com left intact
 # NAME: GitHub
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -118,88 +35,6 @@ DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-KEYWORD,github
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
-* IPv4: 185.199.110.133, 185.199.109.133, 185.199.108.133, 185.199.111.133
-*   Trying 185.199.110.133:443...
-* Connected to raw.githubusercontent.com (185.199.110.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "e6d376311a0dc68f3d8e8af51b6e935feacbc5dbd54fedda07ae924e000091a2"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: 9C6B:272DCC:7BAD9:86D4B:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:15 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200065-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.792201,VS0,VE49
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: aa491a9d1eafbd7b5b2fff9ca199b9272699edf0
-< expires: Fri, 24 Jan 2025 16:25:15 GMT
-< source-age: 0
-< content-length: 20814
-< 
-{ [15456 bytes data]
 # NAME: Google
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -929,8 +764,7 @@ DOMAIN-KEYWORD,recaptcha
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
-IP-CIDR,74.125.0.* Connection #0 to host raw.githubusercontent.com left intact
-0/16,no-resolve
+IP-CIDR,74.125.0.0/16,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
 USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
 USER-AGENT,*com.google.Drive*
@@ -940,88 +774,6 @@ PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
 PROCESS-NAME,BackupandSync
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8000::154
-* IPv4: 185.199.109.133, 185.199.110.133, 185.199.111.133, 185.199.108.133
-*   Trying 185.199.109.133:443...
-* Connected to raw.githubusercontent.com (185.199.109.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "818f9b53ee03637e91cd8c60d2e94cfc0fbed45a9b39d9b44add604b19c8f627"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: 6AD8:D3FDC:70676:7A749:6793BC44
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:15 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200175-IAD
-< x-cache: HIT
-< x-cache-hits: 0
-< x-timer: S1737735616.877312,VS0,VE5
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 864027cc85e16e4f099a171ef4dc9217c75e6739
-< expires: Fri, 24 Jan 2025 16:25:15 GMT
-< source-age: 0
-< content-length: 5451
-< 
-{ [5451 bytes data]
 # NAME: YouTube
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -1174,8 +926,7 @@ DOMAIN-SUFFIX,youtube.no
 DOMAIN-SUFFIX,youtube.pa
 DOMAIN-SUFFIX,youtube.pe
 DOMAIN-SUFFIX,youtube.ph
-DOMAIN-SUF* Connection #0 to host raw.githubusercontent.com left intact
-FIX,youtube.pk
+DOMAIN-SUFFIX,youtube.pk
 DOMAIN-SUFFIX,youtube.pl
 DOMAIN-SUFFIX,youtube.pr
 DOMAIN-SUFFIX,youtube.pt
@@ -1223,88 +974,6 @@ USER-AGENT,YouTube*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtube*
 USER-AGENT,com.google.ios.youtubemusic*
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154
-* IPv4: 185.199.111.133, 185.199.110.133, 185.199.108.133, 185.199.109.133
-*   Trying 185.199.111.133:443...
-* Connected to raw.githubusercontent.com (185.199.111.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "3ca046e0a3e803853685f42cdecb4884c36c815cbe01a80dc610854d631877c9"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: A3AF:1487F9:78571:837D0:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:15 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200056-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.919316,VS0,VE5
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 7c8117423173d52e98433095b4a9403952442e5c
-< expires: Fri, 24 Jan 2025 16:25:15 GMT
-< source-age: 0
-< content-length: 17399
-< 
-{ [5 bytes data]
 # NAME: Facebook
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -1853,8 +1522,7 @@ DOMAIN-SUFFIX,worldhack.com
 DOMAIN-SUFFIX,www-facebook.com
 DOMAIN-SUFFIX,wwwfacebok.com
 DOMAIN-SUFFIX,wwwfacebook.com
-DOMAIN-SUFFIX,wwwinstagram.co* Connection #0 to host raw.githubusercontent.com left intact
-m
+DOMAIN-SUFFIX,wwwinstagram.com
 DOMAIN-SUFFIX,wwwmfacebook.com
 DOMAIN-SUFFIX,yogalayout.com
 DOMAIN-SUFFIX,zuckerberg.com
@@ -1885,89 +1553,6 @@ IP-CIDR,54.173.34.141/32,no-resolve
 IP-CIDR,54.235.23.242/32,no-resolve
 IP-CIDR,54.93.124.31/32,no-resolve
 IP-ASN,32934,no-resolve
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
-* IPv4: 185.199.108.133, 185.199.110.133, 185.199.111.133, 185.199.109.133
-*   Trying 185.199.108.133:443...
-* Connected to raw.githubusercontent.com (185.199.108.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "6e86248b668955fc7b6ea1cd659e323035b09e2fc4a9a31e714715e244ec73db"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: B83D:362057:51BEB:5C94D:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:16 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200148-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.960621,VS0,VE45
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 462c7a864b108a0088ff921513a15e5e30c16936
-< expires: Fri, 24 Jan 2025 16:25:16 GMT
-< source-age: 0
-< content-length: 1607
-< 
-{ [1607 bytes data]
-* Connection #0 to host raw.githubusercontent.com left intact
 # NAME: Telegram
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -2025,89 +1610,6 @@ PROCESS-NAME,telegram-desktop
 PROCESS-NAME,tw.nekomimi.nekogram
 PROCESS-NAME,xyz.nextalone.nagram
 OR,((IP-ASN,44907,no-resolve),(IP-ASN,59930,no-resolve),(IP-ASN,62014,no-resolve),(IP-ASN,62041,no-resolve),(IP-ASN,211157,no-resolve))
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8001::154
-* IPv4: 185.199.109.133, 185.199.111.133, 185.199.110.133, 185.199.108.133
-*   Trying 185.199.109.133:443...
-* Connected to raw.githubusercontent.com (185.199.109.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Reddit/Reddit.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "e422e9db65011c9f3e253fa609226af026d16f58bcfb272ef756e0710c2984c9"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: 4C2E:2A3479:16DA20:192FFA:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:16 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200093-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.041254,VS0,VE62
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: b24f63022c5fa993ed4d539b9e61f656ebaa81f7
-< expires: Fri, 24 Jan 2025 16:25:16 GMT
-< source-age: 0
-< content-length: 426
-< 
-{ [426 bytes data]
-* Connection #0 to host raw.githubusercontent.com left intact
 # NAME: Reddit
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -2122,89 +1624,6 @@ DOMAIN-SUFFIX,redditstatic.com
 DOMAIN-SUFFIX,reddituploads.com
 DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
 DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8003::154
-* IPv4: 185.199.110.133, 185.199.109.133, 185.199.108.133, 185.199.111.133
-*   Trying 185.199.110.133:443...
-* Connected to raw.githubusercontent.com (185.199.110.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Slack/Slack.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Slack/Slack.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Slack/Slack.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "369b21f28b633a82a54210733dca4492337ad94c4c429e43bfc171100bd967b5"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: 9F1C:375D45:6593E:708EE:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:16 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200083-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.146827,VS0,VE52
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: e202c8f8eba028e95e6b3b81493c5f159752d48c
-< expires: Fri, 24 Jan 2025 16:25:16 GMT
-< source-age: 0
-< content-length: 468
-< 
-{ [468 bytes data]
-* Connection #0 to host raw.githubusercontent.com left intact
 # NAME: Slack
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -2222,88 +1641,6 @@ DOMAIN-SUFFIX,slackb.com
 DOMAIN-SUFFIX,slackcertified.com
 DOMAIN-SUFFIX,slackdemo.com
 DOMAIN-SUFFIX,slackhq.com
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8001::154, 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154
-* IPv4: 185.199.109.133, 185.199.111.133, 185.199.108.133, 185.199.110.133
-*   Trying 185.199.109.133:443...
-* Connected to raw.githubusercontent.com (185.199.109.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "26c9b678d38f1719cd35522b290da39205d23c845a053751be1affd7551b3199"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: F9AC:2DA626:15F686:184C7B:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:16 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200070-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.235452,VS0,VE214
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: a9711e2501c4f81dccd2bef9cbbd37cb6e1ace18
-< expires: Fri, 24 Jan 2025 16:25:16 GMT
-< source-age: 0
-< content-length: 4392
-< 
-{ [4392 bytes data]
 # NAME: Proxy
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -2434,8 +1771,7 @@ IP-CIDR,74.86.0.0/16,no-resolve
 IP-CIDR,75.126.0.0/16,no-resolve
 IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.0.0/16,no-resolve
-IP-CIDR6,2001:67c:4e8::/48,no-re* Connection #0 to host raw.githubusercontent.com left intact
-solve
+IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-CIDR6,2a0a:f280::/32,no-resolve
@@ -2447,89 +1783,6 @@ USER-AGENT,WhatsApp*
 USER-AGENT,battleroyale*
 USER-AGENT,com.apple.trustd*
 USER-AGENT,hearthstone*
-* Host raw.githubusercontent.com:443 was resolved.
-* IPv6: 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8001::154, 2606:50c0:8003::154
-* IPv4: 185.199.109.133, 185.199.110.133, 185.199.111.133, 185.199.108.133
-*   Trying 185.199.109.133:443...
-* Connected to raw.githubusercontent.com (185.199.109.133) port 443
-* ALPN: curl offers h2,http/1.1
-} [5 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
-*  CAfile: /etc/ssl/certs/ca-certificates.crt
-*  CApath: /etc/ssl/certs
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
-{ [122 bytes data]
-* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
-{ [19 bytes data]
-* TLSv1.3 (IN), TLS handshake, Certificate (11):
-{ [3099 bytes data]
-* TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [264 bytes data]
-* TLSv1.3 (IN), TLS handshake, Finished (20):
-{ [36 bytes data]
-* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
-} [1 bytes data]
-* TLSv1.3 (OUT), TLS handshake, Finished (20):
-} [36 bytes data]
-* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
-* ALPN: server accepted h2
-* Server certificate:
-*  subject: C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=*.github.io
-*  start date: Mar 15 00:00:00 2024 GMT
-*  expire date: Mar 14 23:59:59 2025 GMT
-*  subjectAltName: host "raw.githubusercontent.com" matched cert's "*.githubusercontent.com"
-*  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
-*  SSL certificate verify ok.
-*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-*   Certificate level 2: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
-{ [5 bytes data]
-* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
-{ [193 bytes data]
-* using HTTP/2
-* [HTTP/2] [1] OPENED stream for https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list
-* [HTTP/2] [1] [:method: GET]
-* [HTTP/2] [1] [:scheme: https]
-* [HTTP/2] [1] [:authority: raw.githubusercontent.com]
-* [HTTP/2] [1] [:path: /blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list]
-* [HTTP/2] [1] [user-agent: curl/8.5.0]
-* [HTTP/2] [1] [accept: */*]
-} [5 bytes data]
-> GET /blackmatrix7/ios_rule_script/master/rule/Surge/Docker/Docker.list HTTP/2
-> Host: raw.githubusercontent.com
-> User-Agent: curl/8.5.0
-> Accept: */*
-> 
-{ [5 bytes data]
-< HTTP/2 200 
-< cache-control: max-age=300
-< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-< content-type: text/plain; charset=utf-8
-< etag: "46af5405c2c0d6da7725318488c79285d2d9e4e41da004e9a490746c9d4cba9b"
-< strict-transport-security: max-age=31536000
-< x-content-type-options: nosniff
-< x-frame-options: deny
-< x-xss-protection: 1; mode=block
-< x-github-request-id: 4990:24D7E4:278857:2B8FB2:6793BDBF
-< accept-ranges: bytes
-< date: Fri, 24 Jan 2025 16:20:16 GMT
-< via: 1.1 varnish
-< x-served-by: cache-iad-kcgs7200101-IAD
-< x-cache: MISS
-< x-cache-hits: 0
-< x-timer: S1737735616.486567,VS0,VE267
-< vary: Authorization,Accept-Encoding,Origin
-< access-control-allow-origin: *
-< cross-origin-resource-policy: cross-origin
-< x-fastly-request-id: 2bf56ce794b5b9f78d5a09cd0c862b880e1575a9
-< expires: Fri, 24 Jan 2025 16:25:16 GMT
-< source-age: 0
-< content-length: 385
-< 
-{ [385 bytes data]
-* Connection #0 to host raw.githubusercontent.com left intact
 # NAME: Docker
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
