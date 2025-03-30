@@ -38,15 +38,15 @@ DOMAIN-KEYWORD,github
 # NAME: Google
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-03-12 02:11:56
+# UPDATED: 2025-03-27 02:12:21
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 5
-# DOMAIN-SUFFIX: 689
+# DOMAIN-SUFFIX: 690
 # IP-CIDR: 4
 # IP-CIDR6: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 3
-# TOTAL: 708
+# TOTAL: 709
 DOMAIN,voice.telephony.goog
 DOMAIN-SUFFIX,0emm.com
 DOMAIN-SUFFIX,1e100.net
@@ -78,6 +78,7 @@ DOMAIN-SUFFIX,androidtv.com
 DOMAIN-SUFFIX,angulardart.org
 DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,apigee.com
+DOMAIN-SUFFIX,app-analytics-services.com
 DOMAIN-SUFFIX,app-measurement-cn.com
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,app-measurement.net
@@ -1625,14 +1626,14 @@ DOMAIN-SUFFIX,slackhq.com
 # NAME: Proxy
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-03-18 02:13:52
-# DOMAIN: 11
+# UPDATED: 2025-03-28 02:13:24
+# DOMAIN: 9
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 6262
+# DOMAIN-SUFFIX: 6201
 # IP-CIDR: 93
 # IP-CIDR6: 4
 # USER-AGENT: 8
-# TOTAL: 6404
+# TOTAL: 6341
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,1e100
 DOMAIN-KEYWORD,abema
