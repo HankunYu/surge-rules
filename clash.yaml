@@ -137,6 +137,14 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
+- name: 巴西
+  type: vmess
+  server: 190.93.119.95
+  port: 42471
+  uuid: 7528c025-c325-4e87-85d4-0a2dec27d87f
+  alterId: 0
+  cipher: auto
+  udp: true
 proxy-groups:
 - name: PROXY
   type: select
@@ -149,6 +157,7 @@ proxy-groups:
   type: select
   proxies: &id001
   - 美国
+  - 巴西
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
