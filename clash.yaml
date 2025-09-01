@@ -131,7 +131,7 @@ dns:
 proxies:
 - name: 美国
   type: vmess
-  server: 107.182.189.118
+  server: 107.182.188.236
   port: 61289
   uuid: 377f1f42-3c5a-4277-acf0-badbc894bb03
   alterId: 0
