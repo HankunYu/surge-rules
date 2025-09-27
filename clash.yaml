@@ -131,19 +131,18 @@ dns:
 proxies:
 - name: 美国
   type: vmess
-  server: 107.182.188.236
+  server: 104.160.46.199
   port: 61289
   uuid: 377f1f42-3c5a-4277-acf0-badbc894bb03
   alterId: 0
   cipher: auto
   udp: true
-- name: 巴西
-  type: vmess
-  server: 190.93.119.95
-  port: 42471
-  uuid: 7528c025-c325-4e87-85d4-0a2dec27d87f
-  alterId: 0
-  cipher: auto
+- name: 美国-SS
+  type: ss
+  server: 104.160.46.199
+  port: 33133
+  cipher: aes-128-gcm
+  password: daso91=sd14
   udp: true
 proxy-groups:
 - name: PROXY
@@ -157,7 +156,7 @@ proxy-groups:
   type: select
   proxies: &id001
   - 美国
-  - 巴西
+  - 美国-SS
 - name: LOAD-BALANCE
   type: load-balance
   url: https://cp.cloudflare.com/generate_204
